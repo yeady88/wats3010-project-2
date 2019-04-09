@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Golden Ratio: Fibonacci</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CUbuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ul class="icon-bar">
+        <li>
+            <a target="_blank" href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.twitter.com" class="twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.github.com" class="github"><i class="fab fa-github"></i></a>
+        </li>
+
+    </ul>
+
+
+    <div class="container">
+        <header class="header">
+            <a class="toggle open" href="#nav">&#9776;</a>
+            <h1 class="brand"><a href="./index.html">Golden Ratio</a></h1>
+        </header>
+
+        <nav id="nav">
+            <a class="toggle close" href="#">×</a>
+            <ul>
+                <li class="">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="fibonacci.html">Fibonacci</a>
+                </li>
+                <li>
+                    <a href="media.html">Media</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="main-section" role="main">
+            <h2>Fibonacci</h2>
+            <h3>The Sequence</h3>
+            <div>
+                <article>
+                    <p>The Fibonnaci number sequence was introduced by an Italian mathematician. The sequece is <i>0, 1,
+                            1, 2, 3, 5, 8, 13, 21 ...</i>. This sequence follows a pattern defined by the rules shown
+                        below.
+                        The Golden Ratio "&#981;" if the ratio between two adjacent values in the sequence.
+                        <div class="math">
+                            <div>F<sub>0</sub> = 0</div>
+                            <div>
+                                F<sub>1</sub> = 0
+                            </div>
+                            <div>
+                                F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub>
+                            </div>
+                            <div>
+                                &#981; = F<sub>i</sub>/F<sub>i-1</sub>
+                            </div>
+                        </div>
+                        <div class="calc-table">
+                            <table>
+                                <caption>Fibonacci sequence and &#981;</caption>
+                                <tr>
+                                    <td></td>
+                                    <th scope="col">F<sub>i</sub></th>
+                                    <th scope="col">&#981; = F<sub>i</sub>/F<sub>i-1</sub></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">0</th>
+                                    <td>1</td>
+                                    <td>na</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>3</td>
+                                    <td>1.5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>5</td>
+                                    <td>1.2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>8</td>
+                                    <td>1.6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>13</td>
+                                    <td>1.625</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>The ratio of each number in the sequence of Fibonacci numbers
+                            approximates the golden ratio &#981;.
+                        </p>
+                        <h3>The Man</h3>
+                        <p>Leonardo Bonacci, later named Fibonnaci by Italian mathematician Guglielmo Libri, was the son
+                            of
+                            an Italian merchant and customs officer stationed in Northern Africa. Fibonacci traveled
+                            around the Mediterannean learning forms of arithmetic and found
+                            the Hindu-Arabic numeric system to have many advantages over other systems such as the Roman
+                            numeral
+                            system. It makes business calculations much easier. He published the book Liber Abaci ("The
+                            Book
+                            of
+                            Calculation")
+                            in 1202. He suggest the use of digits 0-9 which made modern
+                            calculations possible. This book was found to be useful for the banking industry. </p>
+
+                </article>
+            </div>
+        </section>
+
+        <aside>
+            <div class="fib-aside">
+                <figure class="fibonnaci">
+                    <img src="images/fibonacci.jpeg" alt="Leonardo Bonacci,aka Fibonacci">
+                    <figcaption>Leonardo Bonacci, aka Fibonacci</figcaption>
+                </figure>
+                <figure class="book-of-calc">
+                    <img src="images/book-of-calculation.jpg" alt="from The Book of Calculation">
+                    <figcaption>The Book of Calculation <br>by Fibonacci</figcaption>
+                </figure>
+            </div>
+        </aside>
+
+        <footer>
+            <ul class="copyright">
+                <li>Copyright &copy; 2018</li>
+                <li> Ima Webcontentwriter</li>
+            </ul>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>

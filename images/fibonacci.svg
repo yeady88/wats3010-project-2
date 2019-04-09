@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="765px" height="101px" viewBox="0 0 765 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>fibonacci</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-opacity="0.860000014" fill="#EEEEEE" x="0" y="0" width="765" height="101"></rect>
+        <text id="0-1-1-2-3-5-8-13-21" opacity="0.0411005435" font-family="Helvetica" font-size="64" font-weight="normal" fill="#000000">
+            <tspan x="0" y="62"> 0 1 1 2 3 5 8 13 21 34 55  </tspan>
+        </text>
+    </g>
+</svg>

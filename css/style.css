@@ -1,0 +1,425 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --main-bg-color: white;
+  --main-text-color: #353535;
+  --container-bg-color: rgb(238, 238, 238);
+  --nav-bg-color: black;
+  --nav-text-color: lightgray;
+  --nav-hover-color: darkgray;
+  --mason-border-color: #999;
+  --brand-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer,
+h1 a,
+li a {
+  font-family: 'Ubuntu', serif;
+}
+
+section h3 {
+  margin-top: 0;
+}
+
+p {
+  font-family: 'Montserrat', serif;
+}
+
+
+.brand a {
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
+/* grid */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+/* items */
+.single-col-container>*,
+.container>* {
+  color: var(--main-text-color);
+  line-height: 1.5;
+  background: #eeeeee;
+}
+.single-col-container>nav,
+.container>nav,
+aside,
+section {
+  padding: 20px;
+}
+
+footer {
+  padding: 0 10px;
+}
+
+
+/* nav styles */
+.single-col-container nav,
+.container nav {
+  background-color: var(--nav-bg-color);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--nav-text-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+a.toggle {
+  text-decoration: none;
+}
+
+nav .active {
+  background-color: var(--nav-hover-color);
+  height: 50px;
+  line-height: 50px;
+}
+
+nav li {
+  text-align: center;
+}
+
+nav .active a {
+  color: white;
+}
+
+/* media query for grid layout */
+@media only screen and (min-width: 600px) {
+
+  /* grid */
+  .single-col-container,
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* specific item styles */
+  .single-col-container,
+  .container header,
+  .container nav,
+  .container footer {
+    grid-column: span 4;
+  }
+
+  .container section {
+    grid-column: span 3;
+  }
+
+  /* nav styles */
+  nav ul li {
+    display: inline-block;
+    padding: 0 20px 0 0;
+    width: 100px;
+
+  }
+
+  /* hide toggle */
+  .toggle {
+    display: none;
+  }
+
+  header {
+    padding: 0 20px;
+
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+    background-image: url("../images/fibonacci-numbers.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+  }
+
+}
+
+/* media query for nav styles */
+@media only screen and (max-width: 599px) {
+
+  #nav {
+    transition: transform .3s ease-in-out;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    width: 300px;
+    right: -340px;
+  }
+
+  #nav:target {
+    transform: translateX(-340px);
+  }
+
+  .close {
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    font-size: 3em;
+    position: relative;
+    top: -30px;
+  }
+
+  .open {
+    text-align: left;
+    color: var(--main-text-color);
+    font-size: 2em;
+    padding-left: 5px;
+  }
+
+}
+
+
+/* masonry */
+.golden-mason img {
+  width: 100%;
+}
+
+.golden-mason article {
+  padding: 20px;
+  border: 1px solid var(--mason-border-color);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.golden-mason a:link,
+.golden-mason a:visited {
+  color: black;
+}
+
+.golden-mason h1 {
+  margin-top: 0;
+  margin-left: 0.75rem;
+}
+
+.golden-mason {
+  column-count: 3;
+  columns: 250px;
+  column-gap: 10px;
+}
+
+.golden-mason article {
+  break-inside: avoid-column;
+  margin-bottom: 1rem;
+}
+
+.golden-mason p {
+  font-size: .9rem;
+}
+
+/* aside */
+aside h3 {
+  margin: 0 auto;
+}
+
+aside p {
+  font-size: .9rem;
+}
+
+/* footer */
+ul.copyright {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.copyright li {
+  font-size: .9rem;
+}
+
+
+/* social links */
+.icon-bar {
+  position: fixed;
+  top: 2%;
+  right: 4%;
+}
+
+icon-bar ul {
+  list-style-type: none;
+}
+
+.icon-bar li {
+  display: inline-block;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: goldenrod;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.github {
+  background: #000;
+  color: white;
+}
+
+/* zoom image */
+.zoom {
+  padding: 10px;
+  /* background-color: green; */
+  transition: transform .2s;
+  /* Animation */
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  transition: transform .3s ease-in-out;
+}
+
+/* .zoom:hover {
+  transform: scale(1.5);
+} */
+
+/* embedded video responsive */
+/* .video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+} */
+
+/* .video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+} */
+
+/* audio */
+audio {
+  background-color: red;
+}
+
+/* credits */
+.credits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.credits a {
+  font-size: .7em;
+  text-decoration: none;
+  color: black;
+}
+
+.credits a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* about video */
+.adt-video {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+/* fibonacci */
+.fib-aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fib-aside img {
+  width: 180px;
+  height: auto;
+}
+
+.calc-table  table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width:100%;
+  border: 1px solid #ddd;
+}
+
+.calc-table th,
+.cacl-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.calc-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.math {
+  margin: 20px auto;
+  padding: 10px 30px;
+  width: 200px;
+  background-color: black;
+  color: white;
+}
+figcaption{
+  font-family: 'Ubuntu', serif;
+  font-size: .7rem
+}
+
+/* about */
+.learning-objectives{
+  margin: 20px;
+}
+.learning-objectives li{
+  font-family: 'Ubuntu', serif;
+}
+
+/* media */
+/* .media-main {
+  display:grid;
+  grid-template-columns: 1fr;
+} */
+
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
