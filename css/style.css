@@ -306,29 +306,16 @@ icon-bar ul {
   transition: transform .3s ease-in-out;
 }
 
-/* .zoom:hover {
-  transform: scale(1.5);
-} */
-
-/* embedded video responsive */
-/* .video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-} */
-
-/* .video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-} */
 
 /* audio */
-audio {
+/* audio {
   background-color: red;
+} */
+.audio-container{
+  display:grid;
+  grid-template-columns: auto auto;
+  background-color: var(--nav-text-color);
+  align-items: center;
 }
 
 /* credits */
@@ -346,14 +333,9 @@ audio {
 .credits a:hover {
   background-color: black;
   color: white;
+  cursor:pointer;
 }
 
-/* about video */
-.adt-video {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-}
 
 /* fibonacci */
 .fib-aside{
