@@ -405,3 +405,10 @@ figcaption{
   height: 100%;
   border: 0;
 }
+.frame-container {
+  margin: 0 auto;
+  width: 70%;
+}
+.frame-container{
+  text-align:center;
+}
