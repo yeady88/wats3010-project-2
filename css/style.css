@@ -24,6 +24,7 @@
   --twitter-bg: #55ACEE;
   --github-bg:#000;
   --icon-hover: goldenrod;
+  --icon-color: white;
   --credit-hover-color: white;
   --credit-hover-bg: black;
   --calc-table-border: #ddd;
@@ -296,14 +297,17 @@ icon-bar ul {
 
 .facebook {
   background-color: var(--facebook-bg);
+  color: var(--icon-color)
 }
 
 .twitter {
   background-color: var(--twitter-bg);
+  color: var(--icon-color);
 }
 
 .github {
   background-color: var(--github-bg);
+  color: var(--icon-color);
 }
 
 /* zoom image */
@@ -416,4 +420,10 @@ figcaption{
 }
 .frame-container{
   text-align:center;
+}
+
+/* about */
+.xkcd-container img {
+  width: 320px;
+  height: auto;
 }
