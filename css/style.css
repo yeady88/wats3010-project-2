@@ -18,11 +18,11 @@
   --font-serif-titles: 'Ubuntu', serif;
   --font-serif-text: 'Montserrat', serif;
   --container-bg-color: #eeeeee;
-  --masonry-bg-color:#fff;
+  --masonry-bg-color: #fff;
   --masonry-link: black;
-  --facebook-bg:#3B5998;
+  --facebook-bg: #3B5998;
   --twitter-bg: #55ACEE;
-  --github-bg:#000;
+  --github-bg: #000;
   --icon-hover: goldenrod;
   --icon-color: white;
   --credit-hover-color: white;
@@ -74,9 +74,13 @@ p {
   line-height: 1.5;
   background: var(--container-bg-color);
 }
-.single-col-container>nav,
-.container>nav,
-aside,
+
+.single-col-container nav,
+.container nav {
+  padding: 10px;
+}
+
+.container>aside,
 section {
   padding: 20px;
 }
@@ -149,7 +153,6 @@ nav .active a {
   /* nav styles */
   nav ul li {
     display: inline-block;
-    padding: 0 20px 0 0;
     width: 100px;
 
   }
@@ -157,11 +160,6 @@ nav .active a {
   /* hide toggle */
   .toggle {
     display: none;
-  }
-
-  header {
-    padding: 0 20px;
-
   }
 
   .header {
@@ -218,7 +216,7 @@ nav .active a {
   padding: 20px;
   border: 1px solid var(--mason-border-color);
   border-radius: 5px;
-  background-color: var(masonry-bg-color); 
+  background-color: var(masonry-bg-color);
 }
 
 .golden-mason a:link,
@@ -271,7 +269,7 @@ ul.copyright {
 /* social links */
 .icon-bar {
   position: fixed;
-  top: 2%;
+  top: 1%;
   right: 4%;
 }
 
@@ -310,28 +308,6 @@ icon-bar ul {
   color: var(--icon-color);
 }
 
-/* zoom image */
-.zoom {
-  padding: 10px;
-  transition: transform .2s;
-  /* Animation */
-  width: 70%;
-  height: auto;
-  margin: 0 auto;
-  transition: transform .3s ease-in-out;
-}
-
-
-/* audio */
-/* audio {
-  background-color: red;
-} */
-.audio-container{
-  display:grid;
-  grid-template-columns: auto auto;
-  background-color: var(--nav-text-color);
-  align-items: center;
-}
 
 /* credits */
 .credits ul {
@@ -348,25 +324,26 @@ icon-bar ul {
 .credits a:hover {
   background-color: var(--credit-hover-bg);
   color: var(--credit-hover-color);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /* fibonacci */
-.fib-aside{
+.fib-aside {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .fib-aside img {
   width: 180px;
   height: auto;
 }
 
-.calc-table  table{
+.calc-table table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   border-spacing: 0;
-  width:100%;
+  width: 100%;
   border: 1px solid var(--calc-table-border);
 }
 
@@ -378,8 +355,9 @@ icon-bar ul {
 }
 
 .calc-table tr:nth-child(even) {
-  background-color:var(--calc-table-border);
+  background-color: var(--calc-table-border);
 }
+
 .math {
   margin: 20px auto;
   padding: 10px 30px;
@@ -387,25 +365,21 @@ icon-bar ul {
   background-color: var(--math-bg-color);
   color: var(--math-color);
 }
-figcaption{
+
+figcaption {
   font-family: var(--font-serif-titles);
   font-size: .7rem
 }
 
-/* about */
-.learning-objectives{
-  margin: 20px;
-}
-.learning-objectives li{
-  font-family: var(--font-serif-titles);
-}
 
 
+/* media */
 .resp-container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
 }
+
 .resp-iframe {
   position: absolute;
   top: 0;
@@ -414,15 +388,34 @@ figcaption{
   height: 100%;
   border: 0;
 }
+
 .frame-container {
   margin: 0 auto;
   width: 70%;
 }
-.frame-container{
-  text-align:center;
+
+.frame-container {
+  text-align: center;
+}
+
+/* media audio */
+
+.audio-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: var(--nav-text-color);
+  align-items: center;
 }
 
 /* about */
+.learning-objectives {
+  margin: 20px;
+}
+
+.learning-objectives li {
+  font-family: var(--font-serif-titles);
+}
+
 .xkcd-container img {
   width: 320px;
   height: auto;
