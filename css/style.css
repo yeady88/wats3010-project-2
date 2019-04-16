@@ -12,9 +12,26 @@
   --nav-bg-color: black;
   --nav-text-color: lightgray;
   --nav-hover-color: darkgray;
+  --nav-active: white;
   --mason-border-color: #999;
   --brand-color: black;
+  --font-serif-titles: 'Ubuntu', serif;
+  --font-serif-text: 'Montserrat', serif;
+  --container-bg-color: #eeeeee;
+  --masonry-bg-color:#fff;
+  --masonry-link: black;
+  --facebook-bg:#3B5998;
+  --twitter-bg: #55ACEE;
+  --github-bg:#000;
+  --icon-hover: goldenrod;
+  --credit-hover-color: white;
+  --credit-hover-bg: black;
+  --calc-table-border: #ddd;
+  --math-color: white;
+  --math-bg-color: black;
+
 }
+
 
 h1,
 h2,
@@ -25,7 +42,7 @@ h6,
 footer,
 h1 a,
 li a {
-  font-family: 'Ubuntu', serif;
+  font-family: var(--font-serif-titles);
 }
 
 section h3 {
@@ -33,7 +50,7 @@ section h3 {
 }
 
 p {
-  font-family: 'Montserrat', serif;
+  font-family: var(--font-serif-text);
 }
 
 
@@ -54,7 +71,7 @@ p {
 .container>* {
   color: var(--main-text-color);
   line-height: 1.5;
-  background: #eeeeee;
+  background: var(--container-bg-color);
 }
 .single-col-container>nav,
 .container>nav,
@@ -104,7 +121,7 @@ nav li {
 }
 
 nav .active a {
-  color: white;
+  color: var(--nav-active);
 }
 
 /* media query for grid layout */
@@ -151,7 +168,6 @@ nav .active a {
     height: auto;
     background-image: url("../images/fibonacci-numbers.png");
     background-repeat: no-repeat;
-    /* background-size: cover; */
     background-size: 100% 100%;
   }
 
@@ -201,12 +217,12 @@ nav .active a {
   padding: 20px;
   border: 1px solid var(--mason-border-color);
   border-radius: 5px;
-  background: #fff;
+  background-color: var(masonry-bg-color); 
 }
 
 .golden-mason a:link,
 .golden-mason a:visited {
-  color: black;
+  color: var(--masonry-link);
 }
 
 .golden-mason h1 {
@@ -271,33 +287,28 @@ icon-bar ul {
   text-align: center;
   padding: 5px;
   transition: all 0.3s ease;
-  color: white;
   font-size: 20px;
 }
 
 .icon-bar a:hover {
-  background-color: goldenrod;
+  background-color: var(--icon-hover);
 }
 
 .facebook {
-  background: #3B5998;
-  color: white;
+  background-color: var(--facebook-bg);
 }
 
 .twitter {
-  background: #55ACEE;
-  color: white;
+  background-color: var(--twitter-bg);
 }
 
 .github {
-  background: #000;
-  color: white;
+  background-color: var(--github-bg);
 }
 
 /* zoom image */
 .zoom {
   padding: 10px;
-  /* background-color: green; */
   transition: transform .2s;
   /* Animation */
   width: 70%;
@@ -327,15 +338,14 @@ icon-bar ul {
 .credits a {
   font-size: .7em;
   text-decoration: none;
-  color: black;
+  color: var(--main-text-color);
 }
 
 .credits a:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--credit-hover-bg);
+  color: var(--credit-hover-color);
   cursor:pointer;
 }
-
 
 /* fibonacci */
 .fib-aside{
@@ -353,28 +363,28 @@ icon-bar ul {
   border-collapse: collapse;
   border-spacing: 0;
   width:100%;
-  border: 1px solid #ddd;
+  border: 1px solid var(--calc-table-border);
 }
 
 .calc-table th,
 .cacl-table td {
-  border: 1px solid #dddddd;
+  border: 1px solid var(--calc-table-border);
   text-align: left;
   padding: 8px;
 }
 
 .calc-table tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color:var(--calc-table-border);
 }
 .math {
   margin: 20px auto;
   padding: 10px 30px;
   width: 200px;
-  background-color: black;
-  color: white;
+  background-color: var(--math-bg-color);
+  color: var(--math-color);
 }
 figcaption{
-  font-family: 'Ubuntu', serif;
+  font-family: var(--font-serif-titles);
   font-size: .7rem
 }
 
@@ -383,14 +393,9 @@ figcaption{
   margin: 20px;
 }
 .learning-objectives li{
-  font-family: 'Ubuntu', serif;
+  font-family: var(--font-serif-titles);
 }
 
-/* media */
-/* .media-main {
-  display:grid;
-  grid-template-columns: 1fr;
-} */
 
 .resp-container {
   position: relative;
