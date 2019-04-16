@@ -46,9 +46,6 @@ li a {
   font-family: var(--font-serif-titles);
 }
 
-section h3 {
-  margin-top: 0;
-}
 
 p {
   font-family: var(--font-serif-text);
