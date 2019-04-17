@@ -388,7 +388,7 @@ figcaption {
 
 .frame-container {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
 }
 
 .frame-container {
@@ -399,10 +399,17 @@ figcaption {
 
 .audio-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* see notes below */
+
   background-color: var(--nav-text-color);
   align-items: center;
 }
+@media only screen and (min-width: 600px) {
+  .audio-container {
+    grid-template-columns: auto auto;
+  }
+}
+
 
 /* about */
 .learning-objectives {
