@@ -1,6 +1,8 @@
-*Golden Ratio*
+# Golden Ratio
 
 **Responsive Web Design | Layout Techniques | Working with Media**  
+
+In this assignment we build a multi page responsive website. It will require flex, grid and column layouts.  The pages and assets are included in this repo.  There are `TODO`s in each page that provide pointers to what needs to be done in order to complete the HTML in the page.  There is also an empty style sheet `css/style.css` that we'll work on.
 
 ***Learning Objectives***  
 
@@ -19,7 +21,16 @@ layout,	flex, grid
 12. Reading designs
 
 
-https://support.balsamiq.com/tutorials/firstwireframe/
+See the design folder for comps and wireframes.  All interpage navigation takes place through a nav bar. The information architecture diagram indicates that every page is available from every other page and this is all via the nav bar.  It is a mobile first nav bar with a hamburger.  
+
+![Information Architecture Diagram](design/golden-ratio-info-architecture.png).
+
+## HTML
+
+
+## CSS
+
+
 
 
 
