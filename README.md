@@ -548,8 +548,15 @@ icon-bar ul {
 }
 ```
 
+## Wireframes
+![Desktop home page](design/wireframes/desktop-homepage.png)  
+![Desktop mobile](design/wireframes/desktop-layout.png)
+![Mobile Nav Closed](design/wireframes/mobile-layout-nav-closed.png)
+![Mobile Nav Open](design/wireframes/mobile-layout-nav-open.png)
 
-
+## Comps
+![Home full screen](design/comps/golden-ratio-index-full.png)
+![Home mobile](design/comps/golden-ratio-index-mobile.png)
 
 
 
