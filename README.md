@@ -26,7 +26,8 @@ See the design folder for comps and wireframes.  All interpage navigation takes 
 ![Information Architecture Diagram](design/golden-ratio-info-architecture.png).
 
 ## HTML
-See `TODO`'s for location of HTML changes
+See `TODO`'s for location of HTML changes.  Be sure to remove the `TODO` comments once you've completed the task.
+
 1. Add `<title>` to all 4 pages. 
  - index.html: "Golden Ratio"
  - fibonacci.html: "Golden Ratio: Fibonacci"
@@ -60,7 +61,7 @@ See `TODO`'s for location of HTML changes
   <a class="toggle open" href="#nav">&#9776;</a>
   <h1 class="brand"><a href="./index.html">Golden Ratio</a></h1>
 ```
-6. Add list items with navigation and set current page active.  The example below is setting the Home page (index.html) to active.
+6. Add list items with navigation and set current page active.  The example below is setting the Home page (index.html) to active. Add the `active` class to the list item that matches the active page.
 ```
  <li class="active">
     <a href="#">Home</a>
@@ -479,6 +480,11 @@ icon-bar ul {
 .calc-table tr:nth-child(even) {
   background-color: var(--calc-table-border);
 }
+.calc-table caption {
+  caption-side:top;
+  text-align: left;
+  font-style: italic; 
+}
 ```
 16. Style the math presentation on fibonacci.html.
 ```
@@ -528,7 +534,10 @@ icon-bar ul {
 }
 @media only screen and (min-width: 600px) {
   .audio-container {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  .audio-container iframe {
+    margin-top: 20px;
   }
 }
 ```
