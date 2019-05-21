@@ -83,10 +83,21 @@ See `TODO`'s for location of HTML changes.  Be sure to remove the `TODO` comment
   <li> Ima Webcontentwriter</li>
 </ul>
 ```
-8. Wrap `header` thru `footer` tags in a `<div>`.  Add class `container` to the div on `index.html` and `fibonacci.html`.  Add class `single-col-container` to the dev on `media.html` and `fibonacci.html`. This will be used for applying grid layout. 
+8. Wrap `header` thru `footer` tags in a `<div>`.  Add class `container` to the div on `index.html` and `fibonacci.html`.  Add class `single-col-container` to the dev on `media.html` and `about.html`. This will be used for applying grid layout. 
 9. Masonry effect on `index.html`: Wrap all `article` elements in a `div` with class `golden-mason`.
 10. Credits on `index.html`: Wrap the `ul` in the `aside` in a `div` with the class `credits`.
-11. On the `fibonacci.html` page, add a `table` elements with 3 columns. The first column should contain the value of the row (0-6), the second should contain the sum of i and the previous value of i (1,1,2,3,5,8). The third columns should contain the value of the second column divided by the second column in the previous row (na, 1, 2, 1.5, 1.7, 1.6, 1.625).  See the comp for questions about the data.  On the first rows use `<th>` and  `scope="col"` on the columns 2 and 3.  On the remaining rows set use `<th>` and `scope="row"` on the first column.  This is to improve accessibility.
+11. On the `fibonacci.html` page, add a `table` elements with 3 columns. The first column should contain the value of the row (0-6), the second should contain the sum of i and the previous value of i (1,1,2,3,5,8). The third columns should contain the value of the second column divided by the second column in the previous row (na, 1, 2, 1.5, 1.7, 1.6, 1.625).  See the comp for questions about the data.  On the first rows use `<th>` and  `scope="col"` on the columns 2 and 3.  On the remaining rows set use `<th>` and `scope="row"` on the first column.  This is to improve accessibility.  The header row should use this to show `phi` and the subscripting to indicating division.
+```
+  <tr>
+      <td></td>
+      <th scope="col">F<sub>i</sub></th>
+      <th scope="col">&#981; = F<sub>i</sub>/F<sub>i-1</sub></th>
+  </tr>
+```
+Also include this caption;
+```
+<caption>Fibonacci sequence and &#981;</caption>
+```
 12.  On th `fibonacci.html` pages, add picture of Fibonacci, the man, and his book.
 ```
  <figure class="fibonnaci">
