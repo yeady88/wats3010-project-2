@@ -578,6 +578,16 @@ icon-bar ul {
 }
 ```
 
+## Test and Submit
+* Bring up your pages and test them  
+* Push your code to github.com  
+* Configure hosting to github.io in the repository settings tab  
+* Browse to your hosted code  
+* Copy the link into the description area of your repository  
+* Validate and fix errors using [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) Validators  
+* Submit 2 URLs in Canvas: one from github.com and one from github.io  
+
+
 ## Wireframes
 ![Desktop home page](design/wireframes/desktop-homepage.png)  
 ![Desktop mobile](design/wireframes/desktop-layout.png)
