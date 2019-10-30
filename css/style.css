@@ -1,1 +1,59 @@
-/* TODO supply CSS */
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    --main-bg-color: white;
+    --main-text-color: #353535;
+    --container-bg-color: rgb(238, 238, 238);
+    --nav-bg-color: black;
+    --nav-text-color: lightgray;
+    --nav-hover-color: darkgray;
+    --nav-active: white;
+    --mason-border-color: #999;
+    --brand-color: black;
+    --font-serif-titles: 'Ubuntu', serif;
+    --font-serif-text: 'Montserrat', serif;
+    --container-bg-color: #eeeeee;
+    --masonry-bg-color: #fff;
+    --masonry-link: black;
+    --facebook-bg: #3B5998;
+    --twitter-bg: #55ACEE;
+    --github-bg: #000;
+    --icon-hover: goldenrod;
+    --icon-color: white;
+    --credit-hover-color: white;
+    --credit-hover-bg: black;
+    --calc-table-border: #ddd;
+    --math-color: white;
+    --math-bg-color: black;
+  }
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer,
+h1 a,
+li a {
+  font-family: var(--font-serif-titles);
+}
+figcaption {
+  font-family: var(--font-serif-titles);
+  font-size: .7rem
+}
+p {
+  font-family: var(--font-serif-text);
+}
+.brand a {
+    color: var(--brand-color);
+    text-decoration: none;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-ga
+}
